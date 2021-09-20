@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Thoughts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/42363a42d7.js" crossorigin="anonymous"></script>
+</head>
+
+  <body class="d-flex flex-column">
+    <div class="container-fluid bg-light container-custom text-center">
+        <nav class="navbar navbar-expand-lg navbar-light">       
+              <a class="navbar-brand" aria-current="page" href="/">MY DAILY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="/about">ABOUT</a>
+                  <%- include("loggedInNav") -%> 
+                </div>
+              </div>
+          </nav>
+    </div>
+
+    <div class="container-fluid container-custom">

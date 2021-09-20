@@ -1,0 +1,19 @@
+<%- include("partials/header") -%> 
+
+<% if(posts.length === 0) { %> 
+    <div class="container-post">
+        <h1>Hello! 👋</h1>
+        <p> Write your thoughts here ❤️</p>
+    </div>
+<% } %> 
+
+<% for(let i = 0; i < posts.length; i++) { %>
+    <div class="container-post">
+        <h1><%= posts[i].title %></h1>
+        <p class="content"><%= posts[i].content.substring(0, 200) + "..." %> 
+            <a class="d-block" href="/posts/<%= posts[i]._id %>">Read More</a>
+        </p>
+    </div>
+<% } %> 
+
+<%- include("partials/footer") -%> 

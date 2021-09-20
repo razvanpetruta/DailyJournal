@@ -1,0 +1,34 @@
+<%- include("partials/header") -%> 
+
+<div class="form-signin text-center full-center">
+    <form action="/login" method="POST" autocomplete="off">
+        <div class="auth">
+            <h3>Please log in</h3>
+            <div class="google-signing">
+                <a class="google-link" href="/auth/google" role="button">
+                    <i class="fab fa-google"></i>
+                    &nbsp Log in with Google
+                </a>
+            </div>
+            <div class="or">
+                <span>or</span>
+            </div>
+
+            <%- include("partials/message") -%> 
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" name="username" placeholder="Email Address">
+                <label for="floatingInput">Email address</label>
+            </div>
+    
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+                <label for="floatingInput">Password</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-custom">Log in</button>
+        <p class="mt-3">Not a user? <a style="text-decoration: underline;" href="/register">Sign up</a></p>
+    </form>
+</div>
+
+<%- include("partials/footer") -%> 
