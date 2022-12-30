@@ -17,4 +17,4 @@ person you are today.
 
 ## Check it out
 
-- [visit](https://ancient-mountain-42318.herokuapp.com/)
+- [visit](https://daily-journal-app-cjt0.onrender.com)
