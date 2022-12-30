@@ -99,7 +99,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
-            callbackURL: "https://ancient-mountain-42318.herokuapp.com/auth/google/dailyjournal",
+            callbackURL: "https://daily-journal-app-cjt0.onrender.com/auth/google/dailyjournal",
             userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
         },
         (accessToken, refreshToken, profile, cb) => {
